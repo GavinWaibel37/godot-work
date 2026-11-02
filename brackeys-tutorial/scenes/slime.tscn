@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://oar4av2i4d6k"]
 
-[ext_resource type="Script" uid="uid://cd8wur4dvkuko" path="res://scenes/slime.gd" id="1_n6pvg"]
+[ext_resource type="Script" uid="uid://cd8wur4dvkuko" path="res://scripts/slime.gd" id="1_n6pvg"]
 [ext_resource type="Texture2D" uid="uid://bl53gpvg5mh1y" path="res://assets/sprites/slime_green.png" id="1_p2gj0"]
 [ext_resource type="PackedScene" uid="uid://cj3qa0obwq1u3" path="res://scenes/killzone.tscn" id="2_n6pvg"]
 
@@ -56,3 +56,11 @@ frame_progress = 0.067712635
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=2030740894]
 position = Vector2(0, 6)
 shape = SubResource("RectangleShape2D_cfnss")
+
+[node name="RayCastRight" type="RayCast2D" parent="." unique_id=826735555]
+position = Vector2(0, 6)
+target_position = Vector2(11, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="." unique_id=1126926827]
+position = Vector2(0, 6)
+target_position = Vector2(-11, 0)
