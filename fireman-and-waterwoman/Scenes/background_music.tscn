@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://do1ltw25o15u1"]
+
+[ext_resource type="AudioStream" uid="uid://bgk7h5f5urmd" path="res://Assets/Medieval Magical Music - 5 Min - Royalty Free - TGSchematics (128k).wav" id="1_pu4hd"]
+
+[node name="Background Music" type="AudioStreamPlayer2D" unique_id=452161167]
+stream = ExtResource("1_pu4hd")
+autoplay = true
+bus = &"Background "

@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bt3xuubay0e1s" path="res://Scenes/water_woman.tscn" id="1_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://crqabgttrqd5s" path="res://Scenes/fire_man.tscn" id="2_wrm1d"]
 [ext_resource type="Texture2D" uid="uid://btbslrwn614kr" path="res://Assets/tile_set.png" id="3_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://do1ltw25o15u1" path="res://Scenes/background_music.tscn" id="4_3dryh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3dryh"]
 texture = ExtResource("3_wrm1d")
@@ -201,3 +202,5 @@ position = Vector2(194, -41)
 tile_set = SubResource("TileSet_cfnss")
 
 [node name="Background" type="TileMapLayer" parent="." unique_id=1020793927]
+
+[node name="Background Music" parent="." unique_id=452161167 instance=ExtResource("4_3dryh")]
