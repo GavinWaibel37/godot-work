@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://crqabgttrqd5s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ptkvx"]
+
+[node name="FireMan" type="CharacterBody2D" unique_id=686328532]
+collision_layer = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=777745500]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1996534862]
+shape = SubResource("CircleShape2D_ptkvx")
