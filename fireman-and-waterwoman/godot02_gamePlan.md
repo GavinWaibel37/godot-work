@@ -92,7 +92,7 @@ Every game must have these parts from the Brackeys video. See the Guidelines for
 
 | # | Part | Who builds it | Done? |
 |---|---|---|---|
-| 1 | Player with idle, run, and jump animations | Gavin | |
+| 1 | Player with idle, run, and jump animations | Gavin | X |
 | 2 | Our own controls (Input Map) | Max | |
 | 4 | Tile level with a background layer | Max | |
 | 5 | Moving platform (RPG: moving obstacle) | Gavin | |
@@ -101,7 +101,7 @@ Every game must have these parts from the Brackeys video. See the Guidelines for
 | 8 | Killzone for falling and the enemy | Max | |
 | 9 | Enemy that moves between walls | Gavin | |
 | 10 | Signs with a pixel font | Max | |
-| 11 | Music that keeps playing on restart | Gavin | |
+| 11 | Music that keeps playing on restart | Gavin | X |
 | 12 | Pickup sound | Max | |
 
 ---
