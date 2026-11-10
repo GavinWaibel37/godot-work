@@ -70,6 +70,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ptkvx"]
+radius = 11.045361
 
 [node name="FireMan" type="CharacterBody2D" unique_id=686328532]
 collision_layer = 2
@@ -80,4 +81,5 @@ animation = &"jump"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1996534862]
+position = Vector2(0, 4)
 shape = SubResource("CircleShape2D_ptkvx")
