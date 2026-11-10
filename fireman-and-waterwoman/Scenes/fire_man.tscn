@@ -1,11 +1,83 @@
 [gd_scene format=3 uid="uid://crqabgttrqd5s"]
 
+[ext_resource type="Texture2D" uid="uid://j3qqwpxgbrj1" path="res://Assets/fire-man.png" id="1_d1xrf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ygfks"]
+atlas = ExtResource("1_d1xrf")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mi57m"]
+atlas = ExtResource("1_d1xrf")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1xrf"]
+atlas = ExtResource("1_d1xrf")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uut3d"]
+atlas = ExtResource("1_d1xrf")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m33ew"]
+atlas = ExtResource("1_d1xrf")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25vvk"]
+atlas = ExtResource("1_d1xrf")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0102y"]
+atlas = ExtResource("1_d1xrf")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ukewp"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_ygfks")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_mi57m")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1xrf")
+}],
+"loop": 1,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uut3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m33ew")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25vvk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0102y")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 8.0
+}]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_ptkvx"]
 
 [node name="FireMan" type="CharacterBody2D" unique_id=686328532]
 collision_layer = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=777745500]
+sprite_frames = SubResource("SpriteFrames_ukewp")
+animation = &"jump"
+autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1996534862]
 shape = SubResource("CircleShape2D_ptkvx")
