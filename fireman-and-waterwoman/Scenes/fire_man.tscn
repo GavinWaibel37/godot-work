@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://crqabgttrqd5s"]
 
 [ext_resource type="Texture2D" uid="uid://j3qqwpxgbrj1" path="res://Assets/fire-man.png" id="1_d1xrf"]
+[ext_resource type="Script" uid="uid://bn4hjxdmeohdx" path="res://Scripts/fire_man.gd" id="1_ygfks"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ygfks"]
 atlas = ExtResource("1_d1xrf")
@@ -73,7 +74,9 @@ animations = [{
 radius = 11.045361
 
 [node name="FireMan" type="CharacterBody2D" unique_id=686328532]
+z_index = 98
 collision_layer = 2
+script = ExtResource("1_ygfks")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=777745500]
 sprite_frames = SubResource("SpriteFrames_ukewp")

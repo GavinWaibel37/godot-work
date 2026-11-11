@@ -1,0 +1,9 @@
+Notes:
+
+	Player Layers: 2/3
+		WaterWoman - 3
+		FireMan - 2
+
+	Player Z-Index: 98/99
+		WaterWoman - 99
+		FireMan - 98

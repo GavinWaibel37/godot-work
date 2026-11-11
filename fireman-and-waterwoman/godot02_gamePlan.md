@@ -93,7 +93,7 @@ Every game must have these parts from the Brackeys video. See the Guidelines for
 | # | Part | Who builds it | Done? |
 |---|---|---|---|
 | 1 | Player with idle, run, and jump animations | Gavin | X |
-| 2 | Our own controls (Input Map) | Max | |
+| 2 | Our own controls (Input Map) | Max | X |
 | 4 | Tile level with a background layer | Max | |
 | 5 | Moving platform (RPG: moving obstacle) | Gavin | |
 | 6 | Pickups | Max | |
@@ -126,29 +126,29 @@ Add an entry **at the end of every lab day**, then push. Two or three sentences 
 
 ### Day 1
 
-**What did we get done?**
+**What did we get done?** Finding assests (music, sounds, ect.), started player assets
 
 
-**What are we doing next time?**
+**What are we doing next time?** Animations and starting the tilemap
 
 
-**Is anything stuck or broken?**
+**Is anything stuck or broken?** Animations arent created so player scripts are broken
 
 
 ### Day 2
 
-**What did we get done?**
+**What did we get done?** Player scripts and animations, background music
 
 
-**What are we doing next time?**
+**What are we doing next time?** Tilemap
 
 
-**Is anything stuck or broken?**
+**Is anything stuck or broken?** Not currently
 
 
 ### Day 3
 
-**What did we get done?**
+**What did we get done?** 
 
 
 **What are we doing next time?**

@@ -188,19 +188,31 @@ physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 6
 sources/2 = SubResource("TileSetAtlasSource_3dryh")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3dryh"]
+
 [node name="Game" type="Node2D" unique_id=1848053237]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1013937187]
+[node name="World" type="Node" parent="." unique_id=915871636]
 
-[node name="WaterWoman" parent="." unique_id=686328532 instance=ExtResource("1_qxrlw")]
-position = Vector2(-156, -45)
-
-[node name="FireMan" parent="." unique_id=1522707947 instance=ExtResource("2_wrm1d")]
-position = Vector2(194, -41)
-
-[node name="Foreground" type="TileMapLayer" parent="." unique_id=1911698992]
+[node name="Foreground" type="TileMapLayer" parent="World" unique_id=1911698992]
 tile_set = SubResource("TileSet_cfnss")
 
-[node name="Background" type="TileMapLayer" parent="." unique_id=1020793927]
+[node name="Background" type="TileMapLayer" parent="World" unique_id=1020793927]
+
+[node name="Camera2D" type="Camera2D" parent="World" unique_id=1013937187]
+
+[node name="Entities" type="Node" parent="." unique_id=1846294870]
+
+[node name="WaterWoman" parent="Entities" unique_id=686328532 instance=ExtResource("1_qxrlw")]
+position = Vector2(-128, -64)
+
+[node name="FireMan" parent="Entities" unique_id=1522707947 instance=ExtResource("2_wrm1d")]
+position = Vector2(128, -64)
+
+[node name="Debugging shape" type="StaticBody2D" parent="." unique_id=1943234750]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Debugging shape" unique_id=1911604328]
+position = Vector2(0, 24)
+shape = SubResource("WorldBoundaryShape2D_3dryh")
 
 [node name="Background Music" parent="." unique_id=452161167 instance=ExtResource("4_3dryh")]
