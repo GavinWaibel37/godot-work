@@ -1,5 +1,9 @@
 Notes:
 
+Layer Info:
+	Blocks - 1
+	Sponge - 4
+
 	Player Layers: 2/3
 		WaterWoman - 3
 		FireMan - 2

@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bwl6jhje3olu8"]
+
+[ext_resource type="Script" uid="uid://dqudd86w8ij0u" path="res://Scripts/sponge.gd" id="1_a57jc"]
+[ext_resource type="Texture2D" uid="uid://dyhephu0k0ie" path="res://Assets/sponge.png" id="1_nwnhr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a57jc"]
+atlas = ExtResource("1_nwnhr")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uauq0"]
+atlas = ExtResource("1_nwnhr")
+region = Rect2(0, 16, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ti2yv"]
+atlas = ExtResource("1_nwnhr")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imlsm"]
+atlas = ExtResource("1_nwnhr")
+region = Rect2(0, 16, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hdv5g"]
+atlas = ExtResource("1_nwnhr")
+region = Rect2(0, 32, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1f48o"]
+atlas = ExtResource("1_nwnhr")
+region = Rect2(0, 48, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ptkvx"]
+animations = [{
+"frames": [{
+"duration": 4.0,
+"texture": SubResource("AtlasTexture_a57jc")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_uauq0")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ti2yv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_imlsm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hdv5g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1f48o")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h264t"]
+radius = 5.0
+height = 24.0
+
+[node name="Sponge" type="CharacterBody2D" unique_id=1556418671]
+collision_layer = 8
+script = ExtResource("1_a57jc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=105154729]
+sprite_frames = SubResource("SpriteFrames_ptkvx")
+animation = &"run"
+autoplay = "idle"
+frame_progress = 0.12218761
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1877555587]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_h264t")
+
+[node name="RayCastLeft" type="RayCast2D" parent="." unique_id=1201441745]
+target_position = Vector2(-25, 0)
+
+[node name="RayCastRight" type="RayCast2D" parent="." unique_id=1662602427]
+target_position = Vector2(25, 0)
